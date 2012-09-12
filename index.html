@@ -4,14 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<script type="text/javascript" src="/js/jquery.js"></script>
 	<title>Yangsk's Blog</title>
-	<<script type="text/javascript">
-		var bg = [bg_1,bg_2,bg_3,bg_4,bg_5];
-		var bgimg = 
-	</script>
 	<style type="text/css">
 		body{
-			font-family: "微软雅黑","Times New Roman", Times, serif;
-			background-image: url("../img/bg_2.jpg");
+			font-family: Galdeano,"Hiragino Sans GB","Microsoft YaHei",Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+			background-color: #888;
 		}
 		#nav{
 			width:520px;
@@ -97,6 +93,7 @@
 	</style>
 </head> 
 <body>
+	<span id="bg_num"></span>
 	<div id="nav"> 
 		<div class="name">
 			<a href="/" class="link-icon">Yangsk's Blog </a> 
@@ -136,4 +133,16 @@
             $(this).children('.link-info').addClass('hide');
         });
 </script>
+<script type="text/javascript">
+		var bg = ["bg_1.jpg","bg_2.jpg","bg_3.png","bg_4.jpg","bg_5.jpg"];
+		var num = parseInt(Math.random()*10);
+		if(num > 5){
+			num -= 5;
+		}else if(num == 0){
+			num = 1;
+		}
+		var bgimg = bg[num-1];
+		var src = "url('../img/"+bgimg+"')";
+		$("body").css("background-image",src);
+	</script>
 </html>
