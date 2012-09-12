@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<link rel="Shortcut Icon" href="/img/logo.png" />
 	<script type="text/javascript" src="/js/jquery.js"></script>
 	<title>Yangsk's Blog</title>
 	<style type="text/css">
@@ -19,7 +20,6 @@
 			-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=80)";
 			filter:alpha(opacity=80);
 			background-color: #555;
-			
 		}
 		#nav div{
 			background-color: #d6b301;
@@ -44,7 +44,6 @@
 			text-decoration: none;
 			color: #000;
 			width:100%;
-			height:100%;
 		}
 		#nav a.link-icon{
 			display: block;
@@ -55,7 +54,7 @@
 			display: none;
 		}
 		#nav .link-info{
-			text-align:center;position:absolute;bottom:0;left:0;line-height:normal;color:#fff;background-color:#000;height:0px;width:100%;
+			text-align:center;position:absolute;bottom:0;left:0px;line-height:normal;color:#fff;background-color:#000;height:20px;width:100%;
 		}
 		#nav .name{
 			background-color: #3B5997;
@@ -100,23 +99,23 @@
 		</div>   
 		<div class="blog"> 
 			<a href="/blog" class="link-icon"><img src="/img/blog.png" alt="" /></a> 
-			<a href="/blog" class="link-info hide"><span>Blog</span></a> 
+			<a href="/blog" class="link-info hide">Blog</a> 
 		</div>
 		<div class="project">
 			<a href="/project" class="link-icon"><img src="/img/project.png" alt="" /></a> 
-			<a href="/project" class="link-info hide"><span>Project</span></a> 
+			<a href="/project" class="link-info hide">Project</a> 
 		</div>
 		<div class="wiki">
 			<a href="/wiki" class="link-icon"><img src="/img/wiki.png" alt="" /></a> 
-			<a href="/wiki" class="link-info hide"><span>Wiki</span></a> 
+			<a href="/wiki" class="link-info hide">Wiki</a> 
 		</div>
 		<div class="about">
 			<a href="/about" class="link-icon"><img src="/img/about.png" alt="" /></a> 
-			<a href="/about" class="link-info hide"><span>About Me</span></a> 
+			<a href="/about" class="link-info hide">About Me</a> 
 		</div>
 		<div class="rss">
 			<a href="/rss" class="link-icon"><img src="/img/rss.png" alt="" /></a> 
-			<a href="/rss" class="link-info hide"><span>Rss</span></a> 
+			<a href="/rss" class="link-info hide">Rss</a> 
 		</div>
 	</div>
 </body>
@@ -124,13 +123,12 @@
         $('#nav div').on('mouseenter',function(){
         	if(!$(this).hasClass('name')){
                 $(this).addClass('link-hover');
-                $(this).children('.link-info').removeClass('hide').animate({height:'23px'},'fast');
+                $(this).children('.link-info').fadeIn(100);
             }
         }); 
         $('#nav div').on('mouseleave',function(){
             $(this).removeClass('link-hover');
-            $(this).children('.link-info').stop().animate({height:'0'},100);
-            $(this).children('.link-info').addClass('hide');
+            $(this).children('.link-info').fadeOut(100);
         });
 </script>
 <script type="text/javascript">
