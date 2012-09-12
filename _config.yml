@@ -5,8 +5,8 @@ pygments:         true
 paginate:         6
 permalink:        /:year/:month/:title/
 
-title:            yangk.me
-url:              http://yangsk.me
+title:            yangk.tk
+url:              http://yangsk.tk
 feed:             /atom.xml
 author:
     name:         杨少奎
