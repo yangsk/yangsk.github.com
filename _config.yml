@@ -1,6 +1,6 @@
 auto:	          true
 
-markdown:         rdiscount
+html:         	  rdiscount
 pygments:         true
 paginate:         6
 permalink:        /:title/
@@ -12,7 +12,7 @@ author:
     name:         杨少奎
     qq:      	  739042544
 description:      "杨少奎的博客"
-author_info:      <a href="http://yangsk.tk/about.html">杨少奎</a>
+author_info:      <a href="http://yangsk.tk/about">杨少奎</a>
 
 copyright:
-    - Design by <a href="http://yangsk.tk/about.html" title="杨少奎" target="_blank">杨少奎</a> &copy; Copyright 2012
+    - Design by <a href="http://yangsk.tk/about" title="杨少奎" target="_blank">杨少奎</a> &copy; Copyright 2012
