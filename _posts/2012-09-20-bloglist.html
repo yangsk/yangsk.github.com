@@ -1,9 +1,38 @@
-	{% include header.html%}
-	<div class="row">
-		<div class="container box" style="margin-top:60px;min-height:450px">
-			<div>1.<a href="/build-blog">利用Github Pages建立自己的博客</a><span class="label right">2012-9-12</span></div>
-			<hr />
+{%include header.html%}
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="brand bold" href="/" style="color:#0685B1;font-weight:700">Record Life</a>
+				 <ul class="nav">
+				 	<li class="divider-vertical"></li>
+				    <li ><a href="#"><i class="icon-home"></i>&nbsp;HOME</a></li>
+				    <li class="divider-vertical"></li>
+				    <li ><a href="/bloglist"><i class="icon-bold "></i>&nbsp;BLOG</a></li>
+				    <li class="divider-vertical"></li>
+				    <li><a href="#"><i class="icon-bookmark"></i>&nbsp;PROJECT</a></li>
+				    <li class="divider-vertical"></li>
+				    <li><a href="#"><i class="icon-cog"></i>&nbsp;WIKI</a></li>
+				    <li class="divider-vertical"></li>
+				    <li ><a href="/about"><i class=" icon-user"></i>&nbsp;ABOUT</a></li>
+				    <li class="divider-vertical"></li>
+				    <li><a href="#"><i class="icon-volume-up"></i>&nbsp;RSS</a></li>
+			    </ul>
+			</div>
 		</div>
 	</div>
 
-	{% include footer.html%}
+
+
+	<div class="row">
+		<div class="container box" style="margin-top:60px;min-height:450px;">
+			<div style="font-size:16px;margin-left:50px">1.<a href="/build-blog">利用Github Pages建立自己的博客</a><span class="label" style="float:right;margin-right:30px">2012-9-12</span></div>
+			<hr />
+			<div style="font-size:16px;margin-left:50px">2.<a href="/">钓鱼岛是中国的！（待续。。。）</a><span class="label" style="float:right;margin-right:30px">2012-9-20</span></div>
+			<hr />
+		</div>
+
+	</div>
+
+{%include footer.html%}
+
